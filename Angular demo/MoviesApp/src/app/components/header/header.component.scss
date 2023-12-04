@@ -1,0 +1,33 @@
+//@import '../../assets/scss/variables';
+
+.navbar {
+  position: static;
+  height: 50px;
+  background-color: #212121;
+  padding: 0 60px;
+  margin: 0 auto;
+  //border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+
+
+  .navbar-brand {
+    color: rgb(255, 255, 255) !important;
+    margin-right: 2rem;
+    font-size: 24px;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      margin-right: 10px;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+
+
+}
+

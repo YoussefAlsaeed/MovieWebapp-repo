@@ -1,0 +1,37 @@
+<div class="listing">
+    <!-- <div class="listing__head">
+        <h3 class="listing__title" *ngIf="!searched">Top Movies</h3>
+        <h3 class="listing__title" *ngIf="searched">Search Movies</h3>
+    </div> -->
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control searchdesign" placeholder="Search for movies..." [(ngModel)]="searchStr"
+                            name="searchStr" (keyup.enter)="searchMovies()">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </form>
+
+        <div class="row" >
+            <div class="col-md-2 listing__items" *ngFor="let movie of movies">
+
+                    <div class="listing-item-style">
+                    
+                        <img *ngIf="movie?.poster_path" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie?.poster_path}}"
+                            [alt]="movie.title ? movie.title : movie.name">
+                        <img *ngIf="!movie?.poster_path" src="assets/images/default-movie.png"
+                            [alt]="movie.title ? movie.title : movie.name">
+                        <h6>{{ movie.title ? movie.title : movie.name }}</h6>
+                        <p class="rate"><i class="pi pi-star-fill" style="color:yellow;font-size: 1.4rem"></i><span style="font-size: 14.5px;">{{movie?.vote_average}}</span> /10</p>
+                        <p class="year"><span>{{movie.release_date ?( movie.release_date| date: 'yyyy') : movie.first_air_date | date: 'yyyy'}}</span>
+                        </p>
+                    </div>
+                
+            </div>
+        </div>
+    
+</div>

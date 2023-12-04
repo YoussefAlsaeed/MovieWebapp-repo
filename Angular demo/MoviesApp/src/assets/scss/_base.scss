@@ -1,0 +1,64 @@
+@import '../scss/variables';
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  color: $base-font-color;
+  background: $base-bg;
+}
+
+
+a {
+  text-decoration: none !important;
+  color: $anchor-font-color !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-family;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+p {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $text-color-grey;
+  font-weight: 300;
+  text-transform: none;
+}
+
+
+/**
+* A better looking default horizontal rule
+*/
+
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+
+/**
+* Remove default fieldset styles.
+*/
+

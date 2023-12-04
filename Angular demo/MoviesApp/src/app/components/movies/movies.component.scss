@@ -1,0 +1,129 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+  /* Set a background color for the body */
+  body {
+    background-color: #111;
+  }
+  
+  /* Style the container */
+  .listing {
+    margin: 20px auto; 
+    max-width:97%; 
+  }
+  
+  /* Style the heading */
+  .listing__head {
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  
+  .listing__title {
+    color: #fff;
+    font-weight: 50px;
+    font-size: 24px;
+  }
+  
+  /* Style the form */
+  form {
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  /* Style the search input */
+  .searchdesign {
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #716e6e;
+    font-size: 15px;
+  }
+
+  /* Style the row of movie items */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style each movie item */
+  .listing__items {
+    margin-right: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  
+  .listing-item-style {
+    position: relative;
+    overflow: hidden;
+  }
+  .listing-item-style:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.05);
+    cursor: pointer;
+
+  }
+  
+  
+
+  
+  .listing-item-style:hover .hover {
+    display: block;
+  }
+  
+  /* Style the movie image */
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style the movie title */
+  h6 {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Style the rating and year */
+  .rate {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 8px;
+    margin-top: 9px;
+    margin-bottom: 20px;
+  }
+  .year {
+    position: absolute;
+    left: 6px;
+    background: rgba(11, 26, 42, 0.721);
+    padding: 1px 7px;
+    border-radius: 5px;
+    top: 7px;
+    color: #fff;
+    pointer-events: none;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  /* Style the star icon */
+  .pi-star-fill {
+    color: yellow;
+    margin-right: 7px;
+  }
