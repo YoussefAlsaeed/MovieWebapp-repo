@@ -1,0 +1,4 @@
+export default {
+    apikey:"04da96707072c863b9fec7098d6f3d93",
+    bearer:"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNGRhOTY3MDcwNzJjODYzYjlmZWM3MDk4ZDZmM2Q5MyIsInN1YiI6IjY1NmRkNDkzMDg1OWI0MDExYzIzMjlhMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.v_Feg_awsYgZRYxnxAbjvkILPU8K4VooBRdz2vw_Wys"
+}
