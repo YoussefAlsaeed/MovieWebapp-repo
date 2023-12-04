@@ -1,8 +1,12 @@
 <template>
   <div class="home">
-    <form @submit.prevent="searchMovies" class="search-box">
-      <input type="text" placeholder=" Search for movies and TV shows" v-model="search" />
-      <button type="submit" class="search-button">Search</button>
+    <form class="search-box">
+      <input
+        type="text"
+        placeholder="Search for movies and TV shows"
+        v-model="search"
+        @input="searchMovies"
+      />
     </form>
 
     <div class="movies-list">
@@ -24,7 +28,7 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted,watch  } from 'vue';
 import env from '@/env.js';
 
 export default {
@@ -48,7 +52,6 @@ export default {
           .then((data) => {
             if (data.results && data.results.length > 0) {
               movies.value = data.results;
-              search.value = "";
             } else {
               console.error('Results not found in API response:', data);
             }
@@ -63,6 +66,10 @@ export default {
       }
       return `https://image.tmdb.org/t/p/w300${path}`;
     };
+
+    watch(search, () => {
+      searchMovies();
+    });
 
     const getStarRating = (voteAverage) => {
       const maxStars = 5;
