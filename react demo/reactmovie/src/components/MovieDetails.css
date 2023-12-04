@@ -1,0 +1,43 @@
+/* MovieDetails.css */
+
+.movie-details-container {
+    display: flex;
+    background: '#212121';
+    color: '#fff';  
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .movie-details-title {
+    
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .movie-details {
+    display: flex;
+    display: flex;
+    background: '#212121';
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .movie-details-info {
+    margin-right: 20px;
+  }
+  
+  .movie-details-info-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .movie-details-info-releaseDate {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .movie-details-info-overview {
+    margin-top: 10px;
+  }
+  

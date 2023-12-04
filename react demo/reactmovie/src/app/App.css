@@ -1,0 +1,21 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+/* MovieCard.css */
+.movie-card {
+  background: '#212121';
+  color: '#fff';
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add more styles as needed */
