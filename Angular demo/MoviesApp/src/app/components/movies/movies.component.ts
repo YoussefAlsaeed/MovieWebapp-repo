@@ -30,11 +30,11 @@ export class MoviesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getTopRatedMovies(1);
+    this.getPopulardMovies(1);
   }
 
-  getTopRatedMovies(page: number) {
-    this.movieService.getPopulardMovies(page).pipe(delay(2000)).subscribe((res: any) => {
+  getPopulardMovies(page: number) {
+    this.movieService.getPopulardMovies(page).subscribe((res: any) => {
       this.movies = res.results;
       this.totalResults = res.total_results;
     },
@@ -48,6 +48,5 @@ export class MoviesComponent implements OnInit {
       this.searched=true;
     });
   }
-
 
 }

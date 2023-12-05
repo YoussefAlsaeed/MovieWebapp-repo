@@ -1,8 +1,7 @@
-// MovieDetails.js
 
 import React from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import './MovieDetails.css'; // Import your CSS stylesheet
+import './MovieDetails.css';
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -23,7 +22,7 @@ const MovieDetails = () => {
           </h3>
           <p className="movie-details-info-overview"> {overview}</p>
         </div>
-        {/* Add additional movie details or components here */}
+        {}
       </div>
     </div>
   );

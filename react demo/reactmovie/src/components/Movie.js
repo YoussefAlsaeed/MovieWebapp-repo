@@ -7,18 +7,10 @@ import './Movie.css'; // Import the CSS file
 const Movie = ({ id, title, overview, posterPath, releaseDate, rate }) => {
   const imgUrl = "https://image.tmdb.org/t/p/w500/" + posterPath;
   const [showDetails, setShowDetails] = useState(false);
-  const navigate = useNavigate();
 
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
-  };
-
-  // const handleDetailsClick = () => {
-  //   navigate(`/movie/${id}?title=${encodeURIComponent(title)}&releaseDate=${encodeURIComponent(releaseDate)}`);
-  // };
 
   return (
-    <div className="movie-card" // Apply the .movie-card class
+    <div className="movie-card" 
       style={{
         display: 'flex',
         flexDirection: 'column',

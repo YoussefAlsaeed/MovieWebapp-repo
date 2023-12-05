@@ -1,15 +1,11 @@
 <div class="listing">
-    <!-- <div class="listing__head">
-        <h3 class="listing__title" *ngIf="!searched">Top Movies</h3>
-        <h3 class="listing__title" *ngIf="searched">Search Movies</h3>
-    </div> -->
     <form>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <div class="input-group">
                         <input type="text" class="form-control searchdesign" placeholder="Search for movies..." [(ngModel)]="searchStr"
-                            name="searchStr" (keyup.enter)="searchMovies()">
+                            name="searchStr" (keyup.enter)="searchMovies()"> 
                     </div>
                 </div>
             </div>

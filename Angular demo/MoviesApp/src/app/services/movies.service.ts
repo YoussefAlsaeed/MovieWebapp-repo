@@ -13,7 +13,7 @@ export class MoviesService {
 
   constructor(private http: HttpClient) {
     this.baseUrl = 'https://api.themoviedb.org/3/';
-    this.apiKey = '4e05865eb1db5e7861f50195848499ae';
+    this.apiKey = 'your key';
     this.language = 'en-US';
     this.region = 'US';
   }
@@ -25,7 +25,6 @@ export class MoviesService {
 
   getPopulardMovies(page: number): Observable<any> {
   
-    //return this.http.get(`${this.baseUrl}movie/top_rated?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`);
     return this.http.get(`${this.baseUrl}movie/popular?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`);
   }
   searchAll(searchStr: string): Observable<any> {

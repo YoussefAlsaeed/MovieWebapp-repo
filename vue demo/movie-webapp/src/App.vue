@@ -1,7 +1,7 @@
 <template>
   <header>
     <router-link to="/">
-      <h1><span>Top</span> Movies</h1>
+      <h1><span>Egy</span>Best</h1>
     </router-link>
   </header>
   <main>
@@ -36,13 +36,13 @@ header {
 }
 
 header h1 {
-  color: #2d3748; 
+  color: rgb(63, 63, 245); 
   font-size: 28px;
 }
 
 
 header h1 span {
-  color: #718096; 
+  color: #ffffff; 
 }
 
 </style>

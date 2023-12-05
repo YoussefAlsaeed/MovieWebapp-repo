@@ -3,7 +3,7 @@
     <form class="search-box">
       <input
         type="text"
-        placeholder="Search for movies and TV shows"
+        placeholder="  Search for movies and TV shows"
         v-model="search"
         @input="searchMovies"
       />

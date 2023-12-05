@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Movie from './Movie';
 import apiUrl from './MovieApi';
+import apiKey from './MovieApi';
+
 
 const Moviecard = () => {
   const [movies, setMovies] = useState([]);
@@ -10,10 +12,9 @@ const Moviecard = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        let url = apiUrl; // Set the default URL
+        let url = apiUrl;
         if (searchTerm) {
-          // If searchTerm is not empty, modify the URL for searching
-          url = `https://api.themoviedb.org/3/search/multi?api_key=9813ce01a72ca1bd2ae25f091898b1c7&query=${searchTerm}`;
+          url = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&query=${searchTerm}`;
         }        
         const response = await fetch(url);
         const data = await response.json();
